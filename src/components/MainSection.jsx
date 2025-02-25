@@ -32,7 +32,7 @@ function MainSection() {
 
 
   return (
-    <section className="relative h-[90vh] min-h-[400px] w-full overflow-hidden">
+    <section className="relative h-[100vh] min-h-[400px] w-full overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
