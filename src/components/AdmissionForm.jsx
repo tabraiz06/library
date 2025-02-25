@@ -1,6 +1,6 @@
 export default function AdmissionForm() {
   return (
-    <section className="p-8 bg-gray-100 flex justify-center">
+    <section id="admission" className="p-8 bg-gray-100 flex justify-center">
       <div className="w-full  bg-white p-8 rounded-lg shadow-md">
         <h2 className="text-3xl font-bold mb-6 text-center">Admission Form</h2>
         <form className="grid grid-cols-2 gap-4">

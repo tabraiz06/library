@@ -42,7 +42,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="#about"
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? "text-black hover:text-blue-500"
@@ -54,7 +54,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="#admission"
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? "text-black hover:text-blue-500"
@@ -66,7 +66,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="#contact"
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? "text-black hover:text-blue-500"
