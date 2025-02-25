@@ -33,7 +33,12 @@ const Header = () => {
       <div className="text-2xl font-bold">StudySpace</div>
       <button className="md:hidden text-white" onClick={toggleMenu}>
         <svg
-          className="w-6 h-6"
+          
+          className={`w-6 h-6 text-sm font-medium transition-colors duration-300 ${
+            isScrolled
+              ? "text-black"
+              : "text-white hover:text-gray-300"
+          }`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
