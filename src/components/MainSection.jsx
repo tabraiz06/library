@@ -3,19 +3,21 @@ const slides = [
   {
     image:
       "https://ideas.demco.com/wp-content/uploads/2022/10/blog_Children_1_024.jpg",
-    title: "Welcome to StudySpace",
-    description: "Your Perfect Learning Environment",
+    title: "Welcome to Maa Laxmi Library",
+    description: "Maa Laxmi Library is a place where knowledge is cherished and shared. Our library is a haven for learners of all ages, providing a wide range of resources and services to help you achieve your academic and personal goals. Whether you're a student, teacher, or researcher, we have something for everyone. Join us and let us help you unlock your full potential!",
   },
   {
     image: "https://pcu.edu.in/assets/images/library/library-01.webp",
-    title: "Modern Facilities",
-    description: "State-of-the-art Infrastructure",
+    title: "📖 The Biggest Library in Dhanbad – A Haven for Learners!",
+    description:
+      "Located in the heart of Dhanbad, StudySpace is set to become the city's largest and most advanced library. Designed for students, researchers, and professionals, we offer a peaceful and fully equipped study environment. With high-speed internet, private study desks, and 24/7 power backup, we ensure a distraction-free zone where knowledge thrives. Join us and be part of Dhanbad's biggest learning hub!",
   },
   {
     image:
       "https://tcsclibrary.wordpress.com/wp-content/uploads/2011/02/library11.jpg",
-    title: "Expert Guidance",
-    description: "Learn from the Best",
+    title: "📚 Unlock Your Potential at StudySpace",
+    description:
+      "Step into a world of limitless learning with StudySpace! Our library is designed for focused study, innovation, and personal growth. With high-speed internet, peaceful surroundings, and modern facilities, we provide the perfect environment for students and professionals alike. Elevate your learning experience today!",
   },
 ];
 

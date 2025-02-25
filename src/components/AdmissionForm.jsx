@@ -36,22 +36,29 @@ export default function AdmissionForm() {
     const response = await fetch("http://localhost:5000/api/admission", {
       method: "POST",
       body: formData,
+  });
 
-    });
-
-    const text = await response.text(); // Get raw response
+    const text = await response.json(); // Get raw response
     console.log("Raw Server Response:", text);
-
-    try {
-      const data = JSON.parse(text); // Convert to JSON if possible
-      console.log("Parsed Data:", data);
-    } catch (error) {
-      console.error("❌ JSON Parse Error:", error);
+    if(response.status === 201){
+      alert("Admission form submitted successfully");
+      setUserData({
+        name: "",
+        fatherName: "",
+        email: "",
+        address: "",
+        mobileNumber: "",
+      });
+      
+      setStudentImage(null);
+      setAadharFront(null);
+      setAadharBack(null);
+      window.location.reload();
     }
-
-
-    
-  };
+    else{
+      alert("Something went wrong. Please try again later");
+    }
+};
 
   return (
     <section id="admission" className="p-8 bg-gray-100 flex justify-center">
