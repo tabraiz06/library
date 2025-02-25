@@ -51,7 +51,7 @@ function MainSection() {
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <div className="max-w-xl text-white text-center">
               <h1 className="text-4xl font-bold mb-4">{slide.title}</h1>
-              <p className="text-xl text-black">{slide.description}</p>
+              <p className="text-xl text-white">{slide.description}</p>
             </div>
           </div>
         </div>
