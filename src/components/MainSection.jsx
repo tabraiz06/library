@@ -4,7 +4,7 @@ const slides = [
     image:
       "https://ideas.demco.com/wp-content/uploads/2022/10/blog_Children_1_024.jpg",
     title: "Welcome to Maa Laxmi Library",
-    description: "Maa Laxmi Library is a place where knowledge is cherished and shared. Our library is a haven for learners of all ages, providing a wide range of resources and services to help you achieve your academic and personal goals. Whether you're a student, teacher, or researcher, we have something for everyone. Join us and let us help you unlock your full potential!",
+    description: "Maa Laxmi Library's aims to provide a peacefull place for the student of dhanbad to get a better a education.",
   },
   {
     image: "https://pcu.edu.in/assets/images/library/library-01.webp",
@@ -51,7 +51,7 @@ function MainSection() {
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <div className="max-w-xl text-white text-center">
               <h1 className="text-4xl font-bold mb-4">{slide.title}</h1>
-              <p className="text-xl">{slide.description}</p>
+              <p className="text-xl text-black">{slide.description}</p>
             </div>
           </div>
         </div>
