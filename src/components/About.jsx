@@ -14,7 +14,7 @@ const About = () => {
              className="rounded-lg"
            />
          </div>
-         <div className="space-y-6">
+         <div className="space-y-6 p-4">
            <h2 className="text-3xl font-bold">About StudySpace</h2>
            <p className="text-muted-foreground">
              Founded in 2020, StudySpace has been a pioneer in providing premium
