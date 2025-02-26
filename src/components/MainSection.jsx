@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
+
 const slides = [
   {
     image:
       "https://ideas.demco.com/wp-content/uploads/2022/10/blog_Children_1_024.jpg",
     title: "Welcome to Maa Laxmi Library",
-    description: "Maa Laxmi Library's aims to provide a peacefull place for the student of dhanbad to get a better a education.",
+    description:
+      "Maa Laxmi Library's aims to provide a peacefull place for the student of dhanbad to get a better a education.",
   },
   {
     image: "https://pcu.edu.in/assets/images/library/library-01.webp",
@@ -31,7 +33,9 @@ function MainSection() {
     return () => clearInterval(timer);
   }, []);
 
-
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
 
   return (
     <section className="relative h-[100vh] min-h-[400px] w-full overflow-hidden">
@@ -56,8 +60,19 @@ function MainSection() {
           </div>
         </div>
       ))}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`w-4 h-4 rounded-full ${
+              currentSlide === index ? "bg-white" : "bg-gray-400"
+            }`}
+          ></button>
+        ))}
+      </div>
     </section>
   );
 }
-export default MainSection
 
+export default MainSection;
