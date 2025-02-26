@@ -54,14 +54,14 @@ const facilities = [
 
 export default function FacilitiesSection() {
   return (
-    <section id="facilities" className="py-16 bg-gray-50">
+    <section id="facilities" className="py-16 bg-gray-50 mt-4">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-12">Our Facilities</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
           {facilities.map((facility) => (
             <div
               key={facility.title}
-              className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="flex flex-col items-center p-6 bg-[#adadad] rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
               <facility.icon className="h-12 w-12 mb-4 text-primary" />
               <h3 className="text-lg font-semibold mb-2">{facility.title}</h3>

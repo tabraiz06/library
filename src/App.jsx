@@ -1,37 +1,29 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import AdminDashboard from "./pages/AdminDashboard"; // Create this later
+import HomePage from "./pages/HomePage";
+import AdminLoginPage from "./pages/AdminLogin";
 import Header from "./components/Header";
-import MainSection from "./components/MainSection";
-import Facilities from "./components/Facilities";
-import About from "./components/About";
-import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import AdmissionForm from "./components/AdmissionForm";
-import { RiWhatsappFill } from "react-icons/ri";
+import About from "./components/About";
+import ContactUs from "./components/ContactUs";
 
 function App() {
-  const handleWhatsAppRedirect = () => {
-    const phoneNumber = "+917631020507"; // Replace with your WhatsApp number
-    const message = encodeURIComponent(
-      "Hello! I am interested in your library. Is there any sheat available."
-    );
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
-  };
   return (
-    <div className="w-full min-h-screen flex flex-col bg-gray-50 text-gray-900">
+    <Router>
       <Header />
-      <main className="flex-1">
-        <MainSection />
-        <Facilities />
-        <About />
-        <AdmissionForm />
-        <ContactUs />
-        <RiWhatsappFill
-          className="fixed right-6 top-[80%] text-5xl text-green-500 cursor-pointer transform transition-transform duration-300 hover:scale-110 hover:text-green-600"
-          onClick={handleWhatsAppRedirect}
-        />
-      </main>
+      <Routes>
+        <Route path="/admin/login" element={<AdminLoginPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/admission" element={<AdmissionForm />} />
+        <Route path="/contact" element={<ContactUs />} />
+        
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

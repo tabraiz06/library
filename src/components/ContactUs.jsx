@@ -4,7 +4,8 @@ const ContactUs = () => {
    return (
      <section
        id="contact"
-       className="p-8 flex flex-col md:flex-row items-center bg-gray-100"
+       className="p-8 flex flex-col md:flex-row items-center bg-gray-100 "
+
      >
        <div className="md:w-1/2">
          <img

@@ -61,10 +61,13 @@ export default function AdmissionForm() {
 };
 
   return (
-    <section id="admission" className="p-8 bg-gray-100 flex justify-center">
-      <div className="w-full  bg-white p-8 rounded-lg shadow-md">
+    <section className="p-8 bg-gray-500 flex justify-center  relative" id="admission">
+      <div
+        className="w-full  bg-white  p-8 rounded-lg shadow-md mt-16"
+        
+      >
         <h2 className="text-3xl font-bold mb-6 text-center">Admission Form</h2>
-        <form className="grid grid-cols-2 gap-4" onSubmit={handleSubmit} >
+        <form className="grid grid-cols-2 gap-4" onSubmit={handleSubmit}>
           <div>
             <label className="block text-gray-700 text-sm font-bold mb-2">
               Name
@@ -139,7 +142,7 @@ export default function AdmissionForm() {
               className="w-full border rounded-lg px-3 py-2"
               name="studentImage"
               value={userdata.studentImage}
-              onChange={(e)=>setStudentImage(e.target.files[0])}
+              onChange={(e) => setStudentImage(e.target.files[0])}
             />
           </div>
           <div>
@@ -151,18 +154,20 @@ export default function AdmissionForm() {
               className="w-full border rounded-lg px-3 py-2"
               name="aadharFront"
               value={userdata.aadharFront}
-              onChange={(e)=>setAadharFront(e.target.files[0])}
+              onChange={(e) => setAadharFront(e.target.files[0])}
             />
           </div>
           <div>
             <label className="block text-gray-700 text-sm font-bold mb-2">
               Aadhar Card Back Image
             </label>
-            <input type="file" className="w-full border rounded-lg px-3 py-2" 
-            name="aadharBack" value={userdata.aadharBack}
-            onChange={(e)=>setAadharBack(e.target.files[0])
-            }/>
-            
+            <input
+              type="file"
+              className="w-full border rounded-lg px-3 py-2"
+              name="aadharBack"
+              value={userdata.aadharBack}
+              onChange={(e) => setAadharBack(e.target.files[0])}
+            />
           </div>
           <div className="col-span-2">
             <button

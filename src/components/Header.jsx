@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,11 +34,8 @@ const Header = () => {
       <div className="text-2xl font-bold">StudySpace</div>
       <button className="md:hidden text-white" onClick={toggleMenu}>
         <svg
-          
           className={`w-6 h-6 text-sm font-medium transition-colors duration-300 ${
-            isScrolled
-              ? "text-black"
-              : "text-white hover:text-gray-300"
+            isScrolled ? "text-black" : "text-white hover:text-gray-300"
           }`}
           fill="none"
           stroke="currentColor"
@@ -55,8 +53,8 @@ const Header = () => {
       <nav className={`md:flex ${isMenuOpen ? "block" : "hidden"}`}>
         <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 md:space-x-6">
           <li>
-            <a
-              href="#"
+            <Link
+              to="/"
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? "text-black hover:text-blue-500"
@@ -64,11 +62,11 @@ const Header = () => {
               }`}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? "text-black hover:text-blue-500"
@@ -76,11 +74,23 @@ const Header = () => {
               }`}
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
             <a
-              href="#admission"
+              href="#facilities"
+              className={`text-sm font-medium transition-colors duration-300 ${
+                isScrolled
+                  ? "text-black hover:text-blue-500"
+                  : "text-white hover:text-gray-300"
+              }`}
+            >
+              Facilites
+            </a>
+          </li>
+          <li>
+            <Link
+              to="/admission"
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? "text-black hover:text-blue-500"
@@ -88,7 +98,7 @@ const Header = () => {
               }`}
             >
               Admission
-            </a>
+            </Link>
           </li>
           <li>
             <a
@@ -110,7 +120,7 @@ const Header = () => {
                   : "bg-transparent text-white border border-white hover:bg-white hover:text-blue-600"
               }`}
             >
-              Admin Login
+              <Link to="/admin/login">Admin Login</Link>
             </button>
           </li>
         </ul>
