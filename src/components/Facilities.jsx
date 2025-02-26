@@ -61,7 +61,7 @@ export default function FacilitiesSection() {
           {facilities.map((facility) => (
             <div
               key={facility.title}
-              className="flex flex-col items-center p-6 bg-[#adadad] rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="flex flex-col items-center p-6 bg-[#eceaed] rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
               <facility.icon className="h-12 w-12 mb-4 text-primary" />
               <h3 className="text-lg font-semibold mb-2">{facility.title}</h3>

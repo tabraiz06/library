@@ -25,6 +25,10 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  setTimeout(() => {
+    setIsMenuOpen(false);
+  }, 5000);
+
   return (
     <header
       className={`py-4 px-8 flex justify-between items-center fixed top-0 z-50 w-full shadow-md transition-colors duration-300 ${
