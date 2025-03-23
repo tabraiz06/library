@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import AdmissionForm from "./components/AdmissionForm";
 import About from "./components/About";
 import ContactUs from "./components/ContactUs";
+import AdminMessages from "./pages/AdminMessages";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/messages" element={<AdminMessages />} />
+        
       </Routes>
       <Footer />
     </Router>
