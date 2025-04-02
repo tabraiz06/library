@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Logo from '../assets/mll-logo.png'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +36,11 @@ const Header = () => {
         isScrolled ? "bg-white" : "bg-transparent"
       }`}
     >
-      <div className="text-2xl font-bold">StudySpace</div>
+      <div className="text-2xl font-bold">
+        <Link to="/">
+          <img src={Logo} alt="Logo" className="w-24 h-auto" />
+        </Link>
+      </div>
       <button className="md:hidden text-white" onClick={toggleMenu}>
         <svg
           className={`w-6 h-6 text-sm font-medium transition-colors duration-300 ${

@@ -62,11 +62,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold">Developer Contact</h4>
             <p className="text-gray-400">Designed and developed by John Doe</p>
             <div className="flex flex-col items-center md:flex-row">
-              <img
-                src={devImage}
-                alt="Developer"
-                className="rounded-full w-12 h-12 mr-4"
-              />
+              
               <p className="text-lg">
                 Developed by <span className="font-semibold">Md Tabraiz</span>
               </p>
