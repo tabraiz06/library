@@ -78,17 +78,26 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a
                 href="https://github.com/tabraiz06"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-white"
               >
                 <Github className="h-5 w-5" />
               </a>
               <a
                 href="https://www.linkedin.com/in/muhammad-tabraiz-6335a214b/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-white"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://x.com/mdtabraiz2" className="hover:text-white">
+              <a
+                href="https://x.com/mdtabraiz2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
             </div>
