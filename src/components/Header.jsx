@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <header
-      className={`py-4 px-8 flex justify-between items-center fixed top-0 z-50 w-full shadow-md transition-colors duration-300 ${
+      className={` px-8 flex justify-between items-center fixed top-0 z-50 w-full shadow-md transition-colors duration-300 ${
         isScrolled ? "bg-white" : "bg-transparent"
       }`}
     >
