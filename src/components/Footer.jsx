@@ -62,19 +62,24 @@ export default function Footer() {
             <h4 className="text-lg font-semibold">Developer Contact</h4>
             <p className="text-gray-400">Designed and developed by John Doe</p>
             <div className="flex flex-col items-center md:flex-row">
-              
               <p className="text-lg">
                 Developed by <span className="font-semibold">Md Tabraiz</span>
               </p>
             </div>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-white">
+              <a
+                href="https://github.com/tabraiz06"
+                className="hover:text-white"
+              >
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="hover:text-white">
+              <a
+                href="https://www.linkedin.com/in/muhammad-tabraiz-6335a214b/"
+                className="hover:text-white"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="hover:text-white">
+              <a href="https://x.com/mdtabraiz2" className="hover:text-white">
                 <Twitter className="h-5 w-5" />
               </a>
             </div>
