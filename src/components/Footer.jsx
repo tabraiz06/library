@@ -1,7 +1,8 @@
 
 import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react";
 import React from "react";
-import devImage from '../assets/developer.png'
+import logo from '../assets/mll-logo.png'
+
 
 
 export default function Footer() {
@@ -9,8 +10,16 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-200 p-4">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold">StudySpace</h3>
+          <div className="space-y-4 ">
+            <div className="flex items-center flex-col md:items-start space-y-2">
+              <img src={logo} alt="Logo" className="h-16 w-auto" />
+              <h2 className="text-xl font-bold text-white">
+                Maa Lakshmi Library
+              </h2>
+
+              <h4></h4>
+            </div>
+
             <p className="text-gray-400">
               Providing the perfect environment for focused learning and
               academic success.
