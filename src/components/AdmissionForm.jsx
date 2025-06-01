@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function AdmissionForm() {
+   const navigate = useNavigate()
   const [userdata, setUserData] = useState({
     name: "",
     fatherName: "",
@@ -84,7 +86,7 @@ export default function AdmissionForm() {
       setStudentImage(null);
       setAadharFront(null);
       setAadharBack(null);
-      window.location.reload();
+      navigate('/');
     } else {
       alert("Something went wrong. Please try again later");
     }
