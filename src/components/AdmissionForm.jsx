@@ -48,14 +48,17 @@ export default function AdmissionForm() {
     formData.append("aadharFront", aadharFront);
     formData.append("aadharBack", aadharBack);
 
-    const response = await fetch("https://maa-lakshmi-library-backend-ozig.vercel.app/api/admission", {
-      method: "POST",
-      body: formData,
-      headers: {
-        // 'Content-Type': 'multipart/form-data' // No need to set this header, fetch will handle it
-        authorization: `Bearer ${localStorage.getItem("adminToken")}`, // Include token for authentication
-      },
-    });
+    const response = await fetch(
+      "https://maa-lakshmi-library-backend-ozig.vercel.app/api/admission",
+      {
+        method: "POST",
+        body: formData,
+        headers: {
+          // 'Content-Type': 'multipart/form-data' // No need to set this header, fetch will handle it
+          authorization: `Bearer ${localStorage.getItem("adminToken")}`, // Include token for authentication
+        },
+      }
+    );
 
     const text = await response.json(); // Get raw response
     console.log("Raw Server Response:", text);
