@@ -59,17 +59,17 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
-                +91 9110947212, +91 7004061521, 0326-3571021
+                0326-3571021, +91 9110947212, +91 7004061521
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5" />
-                info@maalaxmilibrary.com
+                info@maalaxmilibrary.in
               </li>
             </ul>
           </div>
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Developer Contact</h4>
-            
+
             <div className="flex flex-col items-center md:flex-row">
               <p className="text-lg">
                 Developed by <span className="font-semibold">Md Tabraiz</span>

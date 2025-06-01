@@ -48,7 +48,7 @@ export default function AdmissionForm() {
     formData.append("aadharFront", aadharFront);
     formData.append("aadharBack", aadharBack);
 
-    const response = await fetch("http://localhost:5000/api/admission", {
+    const response = await fetch("https://maa-lakshmi-library-backend-ozig.vercel.app/api/admission", {
       method: "POST",
       body: formData,
       headers: {
