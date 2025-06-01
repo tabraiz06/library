@@ -14,7 +14,7 @@ export default function AdminLogin() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/admin/login",
+        "https://maa-lakshmi-library-backend-ozig.vercel.app/api/admin/login",
         {
           email,
           password,

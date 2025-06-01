@@ -14,11 +14,14 @@ export default function AdminDashboard() {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/admission", {
-          headers: {
-            authorization: `Bearer ${localStorage.getItem("adminToken")}`, // Include token for authentication
-          },
-        });
+        const response = await axios.get(
+          "https://maa-lakshmi-library-backend-ozig.vercel.app/api/admission",
+          {
+            headers: {
+              authorization: `Bearer ${localStorage.getItem("adminToken")}`, // Include token for authentication
+            },
+          }
+        );
         setStudents(response.data);
         
       } catch (error) {

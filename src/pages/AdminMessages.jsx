@@ -9,7 +9,9 @@ export default function AdminMessages() {
   useEffect(() => {
     const fetchMessages = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/contact");
+        const response = await axios.get(
+          "https://maa-lakshmi-library-backend-ozig.vercel.app/api/contact"
+        );
         setMessages(response.data);
       } catch (error) {
         console.error("Error fetching messages:", error);
