@@ -50,9 +50,12 @@ const ContactUs = () => {
       </div>
       <div className="md:w-1/2 md:pl-8">
         <h2 className="text-3xl font-bold mb-4 text-center md:text-left">
-          Contact Us
+          Contact Us with MAA LAXMI LIBRARY
         </h2>
-        <form className="bg-white p-6 rounded-lg shadow-md" onSubmit={handleSubmit}>
+        <form
+          className="bg-white p-6 rounded-lg shadow-md"
+          onSubmit={handleSubmit}
+        >
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2">
               Name
